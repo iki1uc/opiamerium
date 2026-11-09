@@ -1,0 +1,7 @@
+// PAT ergänzen:
+[/<script[^>]+src\s*=\s*["']([^"']+)["']/gi, 'script src'],
+[/\bimport\s*\(\s*["']([^"']+)["']/gi, 'dynamischer import()'],
+[/new\s+Worker\s*\(\s*["']([^"']+)["']/gi, 'new Worker()'],
+[/importScripts\s*\(\s*["']([^"']+)["']/gi, 'importScripts()'],
+[/serviceWorker\.register\s*\(\s*["']([^"']+)["']/gi, 'serviceWorker.register()'],
+[/<iframe[^>]+srcdoc\s*=\s*["']/gi, 'iframe srcdoc (inline HTML)'],
