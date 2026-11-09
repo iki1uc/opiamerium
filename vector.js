@@ -1,4 +1,3 @@
-// PAT ergänzen:
 [/<script[^>]+src\s*=\s*["']([^"']+)["']/gi, 'script src'],
 [/\bimport\s*\(\s*["']([^"']+)["']/gi, 'dynamischer import()'],
 [/new\s+Worker\s*\(\s*["']([^"']+)["']/gi, 'new Worker()'],
